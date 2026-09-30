@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18051f">
+  <title>For You ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="stars"></div>
+
+  <main>
+    <section class="hero">
+      <div class="glow"></div>
+      <p class="eyebrow">a little universe made for you</p>
+      <h1>For <span>You</span> ♡</h1>
+      <p class="subtitle">Di antara banyaknya bintang, ada satu yang selalu ingin aku lihat.</p>
+
+      <button class="heart-button" id="heartButton" aria-label="Klik hati">
+        <span>♡</span>
+      </button>
+      <p class="hint">tap / click the heart</p>
+
+      <button class="music-btn" id="musicBtn">♫ Putar lagu</button>
+      <audio id="music" loop>
+        <source src="assets/Tulus_-_Jatuh_Suka_(mp3.pm).mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-title">
+        <p>our little memories</p>
+        <h2>8 alasan untuk tersenyum ♡</h2>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <button class="photo-card" data-photo="1"><img src="assets/Foto (1).jpeg" alt="Foto 1"><span>01</span></button>
+        <button class="photo-card" data-photo="2"><img src="assets/Foto (2).jpeg" alt="Foto 2"><span>02</span></button>
+        <button class="photo-card" data-photo="3"><img src="assets/Foto (3).jpeg" alt="Foto 3"><span>03</span></button>
+        <button class="photo-card" data-photo="4"><img src="assets/Foto (4).jpeg" alt="Foto 4"><span>04</span></button>
+        <button class="photo-card" data-photo="5"><img src="assets/Foto (5).jpeg" alt="Foto 5"><span>05</span></button>
+        <button class="photo-card" data-photo="6"><img src="assets/Foto (6).jpeg" alt="Foto 6"><span>06</span></button>
+        <button class="photo-card" data-photo="7"><img src="assets/Foto (7).jpeg" alt="Foto 7"><span>07</span></button>
+        <button class="photo-card" data-photo="8"><img src="assets/Foto (8).jpeg" alt="Foto 8"><span>08</span></button>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <div class="envelope-wrap">
+        <button class="envelope" id="letterButton" aria-label="Buka surat">
+          <div class="envelope-back"></div>
+          <div class="letter-paper">
+            <span class="mini-heart">♡</span>
+            <p>for you</p>
+          </div>
+          <div class="flap"></div>
+          <div class="envelope-front"></div>
+        </button>
+        <p class="letter-hint">ada sesuatu untuk kamu... klik suratnya ♡</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p>and if you ever wonder...</p>
+      <h2>you are one of my favorite parts of this universe...andd...</h2><br>
+      <h2>Semangat menjalani bulan Oktober ini, sayangggg.... I’ll always be here for you, my love. ♡
+</h2>
+      <div class="tiny-heart">♡</div>
+    </section>
+  </main>
+
+  <div class="letter-modal" id="letterModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="letter-content">
+      <button class="close-modal" id="closeModal">×</button>
+      <div class="letter-photo">
+        <img src="assets/Foto (1).jpeg" alt="Foto untuk surat">
+      </div>
+      <p class="letter-date">untuk seseorang yang spesial ♡</p>
+      <h2>Hai, kamu.</h2>
+
+      <!-- ================= UCAPAN YANG BISA DIUBAH ================= -->
+      <div class="message">
+        <p>Entah harus mulai dari mana, tapi aku cuma ingin bilang kalau kehadiran kamu itu berarti buat aku.</p>
+        <p>Terima kasih sudah menjadi salah satu alasan kenapa hari-hariku terasa lebih berwarna. Mungkin aku nggak selalu pandai mengungkapkannya, tapi aku benar-benar menghargai setiap cerita, tawa, dan waktu yang kita punya.</p>
+        <p>Aku nggak mau membuat janji yang terlalu besar. Aku cuma ingin terus membuat kenangan kecil yang suatu hari nanti bisa kita lihat kembali sambil tersenyum.</p>
+        <p>Kalau dunia ini adalah sebuah galaksi, mungkin kamu adalah salah satu bintang yang paling ingin aku jaga cahayanya.</p>
+        <p class="signature">— dari aku, yang selalu senang melihat kamu tersenyum ♡</p>
+      </div>
+      <!-- ========================================================== -->
+    </div>
+  </div>
+
+  <div class="toast" id="toast">♡ little sparks for you</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
